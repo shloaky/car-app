@@ -33,6 +33,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
 
   @override
   Widget build(BuildContext context) {
+
     // initialize size config
     SizeConfig().init(context);
     double sizeV = SizeConfig.blockSizeV!;

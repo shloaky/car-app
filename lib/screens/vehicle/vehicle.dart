@@ -10,7 +10,33 @@ class _VehicleAddState extends State<VehicleAdd> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child:Center(child: Text("vehicle"))
+   child: Column(
+     children: [
+       const TextField(
+         obscureText: true,
+         decoration: InputDecoration(
+           border: OutlineInputBorder(),
+           labelText: 'Owner',
+         ),
+       ),
+
+       const TextField(
+         obscureText: true,
+         decoration: InputDecoration(
+           border: OutlineInputBorder(),
+           labelText: 'Car model',
+         ),
+       ),
+
+       const TextField(
+         obscureText: true,
+         decoration: InputDecoration(
+           border: OutlineInputBorder(),
+           labelText: 'Licence plate(i.e AAAA-123)',
+         ),
+       ),
+     ],
+   ),
     );
   }
 }
